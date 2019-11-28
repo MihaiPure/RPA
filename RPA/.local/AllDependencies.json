@@ -1043,15 +1043,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mihai Pure\\.nuget\\packages\\": {}
+    "C:\\Users\\Bogdan\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RPA",
       "projectName": "RPA",
-      "projectPath": "D:\\Documents\\FACULTATE\\AN3\\RPA\\RPA\\RPA\\.local",
-      "packagesPath": "C:\\Users\\Mihai Pure\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\FACULTATE\\AN3\\RPA\\RPA\\RPA\\.local"
+      "projectPath": "C:\\Users\\Bogdan\\Desktop\\RPA\\RPA\\.local",
+      "packagesPath": "C:\\Users\\Bogdan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bogdan\\Desktop\\RPA\\RPA\\.local"
     },
     "frameworks": {
       "net461": {
