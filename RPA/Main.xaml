@@ -78,7 +78,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="524,2077" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="524,2347" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="StringDataTable" />
                 <Variable x:TypeArguments="s:String[]" Name="ProductUrls" />
@@ -103,7 +103,7 @@
                   <InArgument x:TypeArguments="s:String[]">[StringDataTable.Split(new String() {Environment.NewLine}, StringSplitOptions.None)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="ForEach" sap:VirtualizedContainerService.HintSize="502,1645" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[ProductUrls]">
+              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="ForEach" sap:VirtualizedContainerService.HintSize="502,1645" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[ProductUrls.Skip(1).Take(5)]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
@@ -182,6 +182,23 @@
                   </ActivityAction>
                 </ui:ForEach.Body>
               </ui:ForEach>
+              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="502,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  https://www.supremen...'" sap:VirtualizedContainerService.HintSize="502,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="0946ccc87c2d98e500dad6a494eccb4e" Selector="&lt;webctrl aaname='checkout now' parentid='cart' tag='A' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+              <Delay Duration="00:00:07" sap:VirtualizedContainerService.HintSize="502,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
             </Sequence>
           </ActivityAction>
         </ui:BrowserScope.Body>
