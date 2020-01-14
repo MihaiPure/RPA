@@ -1049,9 +1049,9 @@
     "restore": {
       "projectUniqueName": "RPA",
       "projectName": "RPA",
-      "projectPath": "C:\\Users\\Bogdan\\Desktop\\RPA_Sneaker_Industry\\RPA\\.local",
+      "projectPath": "C:\\Users\\Bogdan\\Desktop\\RPA\\RPA\\.local",
       "packagesPath": "C:\\Users\\Bogdan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bogdan\\Desktop\\RPA_Sneaker_Industry\\RPA\\.local"
+      "outputPath": "C:\\Users\\Bogdan\\Desktop\\RPA\\RPA\\.local"
     },
     "frameworks": {
       "net461": {
